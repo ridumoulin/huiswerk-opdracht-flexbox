@@ -1,1 +1,41 @@
-/*Schrijf hier jouw CSS*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-basis: 100vw;
+}
+
+header, footer {
+    flex-basis: 130px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.middle-row {
+    display: flex;
+    flex-direction: row;
+    flex-basis: calc(100vh - 260px);
+    width: 100%;
+}
+
+.middle-row article {
+    flex-basis: auto;
+    order: 2;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.middle-row nav {
+    flex-basis: 20%;
+    order: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.middle-row aside {
+    flex-basis: 20%;
+    order: 3;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
